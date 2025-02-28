@@ -14,13 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             numberElement.classList.remove('number-change');
         }, 500);
-
-        arrows.forEach(arrow => {
-            arrow.classList.add('animate');
-            setTimeout(() => {
-                arrow.classList.remove('animate');
-            }, 500);
-        });
     }
 
     arrows.forEach((arrow, direction) => {
