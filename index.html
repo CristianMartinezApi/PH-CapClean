@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>PH CapClean</title>
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo.cap.png" alt="logo" />
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Sobre</li>
+          <li>Serviço</li>
+          <li>Contato</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container">
+      <div class="list">
+        <div class="item active">
+          <div class="cap-img">
+            <img src="./img/capacete.capa.png" alt="imagem capacete" />
+          </div>
+          <div class="content">
+            <h2>Seu Capacete Merece o Melhor</h2>
+            <p class="description">
+              Manter seu capacete limpo não é apenas uma questão de estética, mas também de saúde. A sujeira acumulada pode causar alergias e até mesmo infecções. A CapClean é a solução para manter seu capacete sempre limpo e higienizado.
+            </p>
+            <button class="information">Saiba Mais</button>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="cap-img">
+            <img src="./img/forro.png" alt="imagem forro" />
+          </div>
+          <div class="content">
+            <h2>Mantenha seu capacete limpo e bem cuidado</h2>
+            <p class="description">
+              A parte interna do seu capacete acumula suor, poeira e bactérias, causando mau cheiro e desconforto. A higienização regular é essencial, mas nem sempre é fácil de fazer sozinho.
+              Na PH CapClean, utilizamos produtos especializados para eliminar impurezas e garantir frescor e proteção para você. Traga seu capacete e deixe com quem entende do assunto!
+            </p>
+            <button class="information">Saiba Mais</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrows">
+        <button id="prev"><img src="./img/arrow.png" alt="seta esquerda" /></button>
+        <button id="next"><img src="./img/arrow.png" alt="seta direita" /></button>
+      </div>
+      <div class="indicators">
+        <div class="number">01</div>
+        <ul>
+          <li class="active"></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form
+          class="formulario-contato"
+          id="formulario"
+          onsubmit="enviarWatsapp(event)"
+        >
+          <div class="grupo-form">
+            <input placeholder="Nome" class="campo-form" id="nome" />
+          </div>
+          <div class="grupo-form">
+            <textarea
+              class="campo-form"
+              placeholder="Digite sua Mensagem"
+              id="mensagem"
+            ></textarea>
+          </div>
+          <button type="submit" class="botao-form">Enviar Watsapp</button>
+        </form>
+      </section>
+    <script src="./scrpts.js"></script>
+  </body>
+</html>
