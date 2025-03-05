@@ -33,11 +33,14 @@ header {
             display: flex;
             gap: 100px;
             list-style: none;
+            color: #beff1bc7;
+            cursor: pointer;
 
             & li {
                 & a {
                     display: grid;
-                    grid-template-columns: repeat(3, 400px);
+                    grid-template-columns: repeat(4, 300px);
+                    
                 }
             }
         }
